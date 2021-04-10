@@ -1,0 +1,50 @@
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\bin\Debug\InterfazV1.exe.config
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\bin\Debug\InterfazV1.exe
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\bin\Debug\InterfazV1.pdb
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csprojAssemblyReference.cache
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.FormPrincipal.resources
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.Properties.Resources.resources
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csproj.GenerateResource.cache
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csproj.CoreCompileInputs.cache
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.exe
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.pdb
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.formSM.resources
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.formAyuda.resources
+C:\Users\NR\source\repos\InterfazV1\InterfazV1\obj\Debug\InterfazV1.Operaciones.resources
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\bin\Debug\InterfazV1.exe.config
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\bin\Debug\InterfazV1.exe
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\bin\Debug\InterfazV1.pdb
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csprojAssemblyReference.cache
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.FormPrincipal.resources
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.Operaciones.resources
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.formSM.resources
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.formAyuda.resources
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.Properties.Resources.resources
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csproj.GenerateResource.cache
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.exe
+D:\Usuario\Desktop\Calculadora\InterfazV1\InterfazV1\obj\Debug\InterfazV1.pdb
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\bin\Debug\InterfazV1.exe.config
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\bin\Debug\InterfazV1.exe
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\bin\Debug\InterfazV1.pdb
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csprojAssemblyReference.cache
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.FormPrincipal.resources
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.Operaciones.resources
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.formSM.resources
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.formAyuda.resources
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.Properties.Resources.resources
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csproj.GenerateResource.cache
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csproj.CoreCompileInputs.cache
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.exe
+C:\Users\NR\Desktop\Recursos Arqui\InterfazV2\InterfazV1\InterfazV1\obj\Debug\InterfazV1.pdb
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\bin\Debug\InterfazV1.exe.config
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\bin\Debug\InterfazV1.exe
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\bin\Debug\InterfazV1.pdb
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csprojAssemblyReference.cache
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.FormPrincipal.resources
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.Operaciones.resources
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.formSM.resources
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.formAyuda.resources
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.Properties.Resources.resources
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.csproj.GenerateResource.cache
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.exe
+D:\Usuario\Desktop\Calculadora\Calculadora definitiva\InterfazV1\InterfazV1\obj\Debug\InterfazV1.pdb

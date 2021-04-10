@@ -1,0 +1,499 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace InterfazV1
+{
+    public partial class Operaciones : Form
+    {
+        int i = -1;
+        double valor = 0;
+        string operacion, operacion2;
+        bool control=false;
+
+        private void toMemory(string operation)
+        {
+            memoria.Text = memoria.Text + numerosIngresados.Text + operation;
+            control = true;
+        }
+        private void memoryOperationControl()
+        {
+            try
+            {
+                if (memoria.Text.Substring(memoria.Text.Length - 1) =="=")
+                {
+                    numerosIngresados.Text = "";
+                }
+                else
+                {
+                }
+            }
+            catch 
+            {
+            }
+        }
+        #region:acciones de radio buttons
+        private void enabled(Button objButton)
+        {
+            objButton.Enabled = true;
+        }
+        private void disabled(Button objButton)
+        {
+            objButton.Enabled = false;
+        }
+        private void enabled_buttonsHEX()
+        {
+            enabled(diez);
+            enabled(once);
+            enabled(doce);
+            enabled(trece);
+            enabled(catorce);
+            enabled(quince);
+        }
+        private void disabled_buttonsHEX()
+        {
+            disabled(diez);
+            disabled(once);
+            disabled(doce);
+            disabled(trece);
+            disabled(catorce);
+            disabled(quince);
+        }
+        private void enabled_buttonsOCT()
+        {
+            enabled(ocho);
+            enabled(nueve);
+        }
+        private void disabled_buttonsOCT()
+        {
+            disabled(ocho);
+            disabled(nueve);
+
+        }
+        private void enabled_buttonsBIN()
+        {
+            enabled(dos);
+            enabled(tres);
+            enabled(cuatro);
+            enabled(cinco);
+            enabled(seis);
+            enabled(siete);
+            enabled(ocho);
+            enabled(nueve);
+        }
+        private void disabled_buttonsBIN()
+        {
+            disabled(dos);
+            disabled(tres);
+            disabled(cuatro);
+            disabled(cinco);
+            disabled(seis);
+            disabled(siete);
+            disabled(ocho);
+            disabled(nueve);
+        }
+        #endregion
+        #region:entradas de botones
+        private void write(string numberletter)
+        {
+            if (control==true)
+            {
+                numerosIngresados.Text = "";
+                control = false;
+                i = numerosIngresados.Text.Length;
+            }
+            if (numerosIngresados.Text == "")
+            {
+                numerosIngresados.Text = numberletter;
+            }
+            else
+            {
+                numerosIngresados.Text = numerosIngresados.Text + numberletter;
+            }
+        }
+        private void default0()
+        {
+            memoryOperationControl();
+            if (numerosIngresados.Text == "0")
+            {
+                numerosIngresados.Text="";
+            }
+        }
+        #endregion
+        public Operaciones()
+        {
+            InitializeComponent();
+        }
+
+        private void cero_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("0");
+        }
+
+        private void uno_Click(object sender, EventArgs e)
+        {
+
+            default0();
+            write("1");
+        }
+
+        private void dos_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("2");
+        }
+
+        private void tres_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("3");
+        }
+
+        private void cuatro_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("4");
+        }
+
+        private void cinco_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("5");
+        }
+
+        private void seis_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("6");
+        }
+
+        private void siete_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("7");
+        }
+
+        private void ocho_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("8");
+        }
+
+        private void nueve_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("9");
+        }
+
+        private void diez_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("A");
+        }
+
+        private void once_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("B");
+        }
+
+        private void doce_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("C");
+        }
+
+        private void trece_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("D");
+        }
+
+        private void catorce_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("E");
+        }
+
+        private void quince_Click(object sender, EventArgs e)
+        {
+            default0();
+            write("F");
+        }
+
+        private void borrar_Click(object sender, EventArgs e)
+        {
+            if (numerosIngresados.Text.Length>1)
+            {
+                numerosIngresados.Text = numerosIngresados.Text.Remove(numerosIngresados.Text.Length - 1);
+            }
+            else
+            {
+                numerosIngresados.Text = "0";
+            }
+        }
+
+        private void limpiar_Click(object sender, EventArgs e)
+        {
+            memoria.Text = "";
+            numerosIngresados.Text="0";
+            resulBinario.Text = "0";
+            resulOctal.Text = "0";
+            resulDecimal.Text = "0";
+            resulHexa.Text = "0";
+        }
+
+        private void rbBin_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbBin.Checked == false)
+            {
+                enabled_buttonsBIN();
+            }
+            else
+            {
+                disabled_buttonsBIN();
+            }
+        }
+
+        private void rbOctal_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbOctal.Checked == false)
+            {
+                enabled_buttonsOCT();
+            }
+            else
+            {
+                disabled_buttonsOCT();
+            }
+        }
+
+        private void rbHex_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbHex.Checked == true)
+            {
+                enabled_buttonsHEX();
+            }
+            else
+            {
+                disabled_buttonsHEX(); ;
+            }
+        }
+
+        private void Operaciones_Shown(object sender, EventArgs e)
+        {
+            numerosIngresados.Focus();
+            rbDeci.Checked = true;
+            disabled_buttonsHEX();
+        }
+
+        private void numerosIngresados_TextChanged(object sender, EventArgs e)
+        {
+            i = numerosIngresados.Text.Length;
+
+            if (numerosIngresados.Text=="0")
+            {
+                i = numerosIngresados.Text.Length;
+            }
+            label2.Text = i.ToString();
+            clConverter objConverter = new clConverter(numerosIngresados.Text);
+            try
+            {
+                if (rbBin.Checked == true)
+                {
+                    resulBinario.Text = numerosIngresados.Text;
+                    resulOctal.Text = objConverter.BinaryToOctal();
+                    resulDecimal.Text = objConverter.BinaryToDecimal();
+                    resulHexa.Text = objConverter.BinaryToHexadecimal().ToUpper();
+                }
+                if (rbOctal.Checked == true)
+                {
+                    resulBinario.Text = objConverter.OctalToBinary();
+                    resulOctal.Text = numerosIngresados.Text;
+                    resulDecimal.Text = objConverter.OctalToDecimal();
+                    resulHexa.Text = objConverter.OctalToHexadecimal().ToUpper();
+                }
+                if (rbDeci.Checked == true)
+                {
+                    resulBinario.Text = objConverter.DecimalToBinary();
+                    resulOctal.Text = objConverter.DecimalToOctal();
+                    resulDecimal.Text = numerosIngresados.Text;
+                    resulHexa.Text = objConverter.DecimalToHexadecimal().ToUpper();
+                }
+                if (rbHex.Checked == true)
+                {
+                    resulBinario.Text = objConverter.HexadecimalToBinary();
+                    resulOctal.Text = objConverter.HexadecimalToOctal();
+                    resulDecimal.Text = objConverter.HexadecimalToDecimal();
+                    resulHexa.Text = numerosIngresados.Text;
+                }
+                if (numerosIngresados.Text == "")
+                {
+                    numerosIngresados.Text = "0";
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void mas_Click(object sender, EventArgs e)
+        {
+            toMemory("+");
+            try
+            {
+                label1.Text = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                label1.Text = label1.Text.Substring(label1.Text.Length - 1); 
+                operacion = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                if (operacion.Substring(operacion.Length-1) == "+")
+                {
+                    valor += double.Parse(numerosIngresados.Text);
+                }
+                else
+                {
+                    valor -= double.Parse(numerosIngresados.Text);
+                }
+            }
+            catch 
+            {
+                valor += double.Parse(numerosIngresados.Text);
+            }
+            numerosIngresados.Text = valor.ToString();
+
+        }
+
+        private void menos_Click(object sender, EventArgs e)
+        {
+            toMemory("-");
+            try
+            {
+                label1.Text = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                label1.Text = label1.Text.Substring(label1.Text.Length - 1); 
+                operacion = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                if (operacion.Substring(operacion.Length-1) == "+")
+                {
+                    valor += double.Parse(numerosIngresados.Text);
+                }
+                else
+                {
+                    valor -= double.Parse(numerosIngresados.Text);
+                }
+            }
+            catch 
+            {
+                valor += double.Parse(numerosIngresados.Text);
+            }
+            numerosIngresados.Text = valor.ToString();
+
+        }
+
+        private void por_Click(object sender, EventArgs e)
+        {
+            toMemory("*");
+            try
+            {
+                label1.Text = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                label1.Text = label1.Text.Substring(label1.Text.Length - 1);
+                operacion = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                if (operacion.Substring(operacion.Length - 1) == "/")
+                {
+                    valor += double.Parse(numerosIngresados.Text);
+                }
+                else
+                {
+                    valor -= double.Parse(numerosIngresados.Text);
+                }
+            }
+            catch
+            {
+                valor += double.Parse(numerosIngresados.Text);
+            }
+            numerosIngresados.Text = valor.ToString();
+        }
+
+        private void division_Click(object sender, EventArgs e)
+        {
+            toMemory("/");
+        }
+
+        private void memoria_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void igual_Click(object sender, EventArgs e)
+        {
+            toMemory("=");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+private void mas_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (memoria.Text.Substring(memoria.Text.Length - 1) == "=")
+                {
+                    memoria.Text = memoria.Text.Remove(memoria.Text.Length - 1) + "+";
+                }
+                else
+                {
+                    toMemory("+");
+                    try
+                    {
+                        label1.Text = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                        label1.Text = label1.Text.Substring(label1.Text.Length - 1);
+                        operacion = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                        if (operacion.Substring(operacion.Length - 1) == "+")
+                        {
+                            valor += double.Parse(numerosIngresados.Text);
+                        }
+                        else
+                        {
+                            valor -= double.Parse(numerosIngresados.Text);
+                        }
+                    }
+                    catch
+                    {
+                        valor += double.Parse(numerosIngresados.Text);
+                    }
+                    numerosIngresados.Text = valor.ToString();
+                }
+            }
+            catch 
+            {
+                toMemory("+");
+                try
+                {
+                    label1.Text = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                    label1.Text = label1.Text.Substring(label1.Text.Length - 1);
+                    operacion = memoria.Text.Remove(memoria.Text.Length - (i + 1));
+                    if (operacion.Substring(operacion.Length - 1) == "+")
+                    {
+                        valor += double.Parse(numerosIngresados.Text);
+                    }
+                    else
+                    {
+                        valor -= double.Parse(numerosIngresados.Text);
+                    }
+                }
+                catch
+                {
+                    valor += double.Parse(numerosIngresados.Text);
+                }
+                numerosIngresados.Text = valor.ToString();
+            }
